@@ -1,0 +1,86 @@
+:root{
+    --main-color:#ecf4fe;
+    --btn-color :#348aff;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    outline:none;
+    border: none;
+    
+}
+body{
+    background-color: var(--main-color);
+}
+.header .nav-link {
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+.header .nav-link:hover {
+    color: var(--btn-color);
+    border-bottom:.2em solid #348aff;
+    letter-spacing: .2rem;
+}
+
+
+.header nav .nav-item {
+    margin: 1rem 2rem;
+}
+.btn-logo{
+    background-color: var(--btn-color);
+    padding: .5rem;
+    border-radius: 10px;
+
+}
+
+.badge{
+    color: #348aff;
+    background-color: #fff;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: .8em;
+}
+.img__home{
+    border-radius: 10px;
+}
+.course__btn{
+    background-color: var(--main-color);
+    text-decoration: none;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+#service{
+    margin-top: 100px;
+}
+#service h2 {
+    text-transform: capitalize; 
+}
+#testimonial img{
+    border-radius: 10px;
+    border: 10px solid #fff;
+}
+.sub-video img {
+    position: relative;
+    right: 90px;
+    top: -250px;
+    border-radius: 10px;
+    border: 30px solid var(--main-color );
+}
+.register-sup{
+    background-image:linear-gradient(to right,var(--btn-color),var(--main-color)) ;
+    border-radius: 20px;
+}
+.register-sup .content{
+    padding :2em 1em;
+}
+.footer__category ul {
+    list-style: none;
+    
+}
+.footer-border{
+    border-bottom: .2rem solid #aaa;
+}

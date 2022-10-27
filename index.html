@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learning</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+            />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+            />
+        <!-- font awesome cdn link  -->
+        <!-- owl-carosel -->
+        <link rel="stylesheet" href="/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="/dist/assets/owl.theme.default.css">
+
+        <link rel="stylesheet" href="/css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light"
+                aria-label="Offcanvas navbar large">
+                <div class="container-fluid">
+                    <a class="navbar-brand fw-bold" href="#">Learning</a>
+                    <button class="btn-logo text-white float-start"><div class="fas fa-book-open"></div></button>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar2"
+                        aria-controls="offcanvasNavbar2">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="offcanvas offcanvas-end text-bg-light"
+                        tabindex="-1"
+                        id="offcanvasNavbar2"
+                        aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <h5
+                                class="offcanvas-title"
+                                id="offcanvasNavbar2Label">
+                                Learning
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-dark"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul
+                                class="navbar-nav justify-content-end
+                                flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#course">Course</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#service">Service</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#testimonial">Testimonial</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active"
+                                        aria-current="page"
+                                        href="#contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a type="button" class="nav-link btn
+                                        btn-outline-primary btn-lg text-black"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                        Log in
+                                    </a>
+                                </li>
+                                <!-- Modal -->
+                                <div class="modal fade" id="staticBackdrop"
+                                    data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1"
+                                    aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title"
+                                                    id="staticBackdropLabel">Login
+                                                </h5>
+                                                <button type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="row mb-3">
+                                                        <label for="inputEmail3"
+                                                            class="col-sm-2
+                                                            col-form-label">Email</label>
+                                                        <div class="col-sm-10">
+                                                            <input type="email"
+                                                                class="form-control"
+                                                                id="inputEmail3">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label
+                                                            for="inputPassword3"
+                                                            class="col-sm-2
+                                                            col-form-label">Password</label>
+                                                        <div class="col-sm-10">
+                                                            <input
+                                                                type="password"
+                                                                class="form-control"
+                                                                id="inputPassword3">
+                                                        </div>
+                                                    </div>
+                                                    <fieldset class="row mb-3">
+                                                        <small>Already have an
+                                                            account?<a href="#">Click
+                                                                here</a></small>
+                                                    </fieldset>
+
+                                                    <button type="submit"
+                                                        class="btn btn-primary">Sign
+                                                        in</button>
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn
+                                                    btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link btn btn-primary
+                                        text-white btn-lg"
+                                        aria-current="page"
+                                        href="#">Register</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section class="home mt-5" id="home">
+            <div class="container">
+                <div class="row des">
+                    <div class="col-12 col-md-6 col-lg-6 title">
+                        <h2 class="display-3 w-100 fw-bold">Learn more and make success the result</h2>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 title">
+
+                        <div class="badge mt-3">-The best E-Learning platform</div>
+                        <p class="mt-3">Lorem ipsum, dolor sit amet consectetur
+                            adipisicing elit. Vel rem minus sint accusantium,
+                            odit possimus illo delectus doloribus dicta,
+                            laborum, cum et! Beatae vel repellat error tempora,
+                            illo aliquid sequi!</p>
+                        <a href="" class="btn btn-primary mt-3 btn-lg">Show all
+                            course</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-10 col-lg-10 mt-5">
+                                <img src="/images/video.png" class="w-100
+                                    img__home img-fluid"
+                                    alt="">
+                            </div>
+                            <div class="col-12 col-md-2 col-lg-2 mt-5 d-flex
+                                flex-column justify-content-around
+                                align-items-center ">
+                                <div>
+                                    <span class="text-primary display-6">
+                                        15+
+                                    </span>
+                                    <p>Information</p>
+                                </div>
+                                <div>
+                                    <span class="text-primary display-6">
+                                        15+
+                                    </span>
+                                    <p>Information</p>
+                                </div>
+                                <div>
+                                    <span class="text-primary display-6">
+                                        15+
+                                    </span>
+                                    <p>Information</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="course mt-5" id="course">
+            <div class="text-center">
+                <h2 class="display-3 fw-bold">Our Featured Course</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore, natus alias? Officiis odit nemo expedita possimus
+                    neque repellat quis, velit ex iusto aut excepturi voluptatem
+                    esse earum ullam veniam sapiente!</p>
+            </div>
+            <div class="container mt-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/images/product.png" class="card-img-top
+                                course__img" alt="...">
+                            <div class="card-body">
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <a href="#" class="course__btn ">Development</a>
+                                    <span class="float-end text-primary
+                                        fw-bold">$225</span>
+                                </div>
+                                <p class="card-text mt-2 text-center">Become a
+                                    profestional designer be with passion & etc</p>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <div class="fas fa-book-open
+                                        text-secondary"></div><small
+                                        class="text-secondary ms-1">20 Lessons</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><i class="fas fa-user-group"></i>
+                                        <small class="text-secondary ms-1">237
+                                            Students</small></span>
+                                </div>
+                                <div class=" justify-content-between
+                                    align-items-center">
+                                    <small class=" ms-1">5.0</small>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <div class="fas fa-star text-primary"></div>
+                                    <small class=" ms-1">(2.157)</small>
+                                    <span class="float-end text-secondary
+                                        fw-bold"><button class="btn-logo"><i
+                                                class="fas fa-arrow-right"></i></button></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="service" id="service">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h2 class="display-4 fw-bold">we make your learning through awesome</h2>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis velit, quia sequi delectus quis nemo esse modi maxime ipsa impedit, totam inventore perferendis mollitia voluptatum exercitationem quae natus architecto sint.</br>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere iste suscipit, adipisci quae qui nam error modi sit aliquam voluptatibus exercitationem aperiam, rerum ipsa praesentium dolores et voluptates ullam eveniet?</p>
+                        <div class="d-flex justify-content-around">
+                            <div>
+                                <span class="text-primary display-6 fw-bold">
+                                    15+
+                                </span>
+                                <p>Information</p>
+                            </div>
+                            <div>
+                                <span class="text-primary display-6 fw-bold">
+                                    15+
+                                </span>
+                                <p>Information</p>
+                            </div>
+                            <div>
+                                <span class="text-primary display-6 fw-bold">
+                                    15+
+                                </span>
+                                <p>Information</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6 flex-column justify-content-between mt-3">
+                        <div>
+                            <div class="d-flex">
+                                <button class="btn btn-warning text-white btn-lg"><i class="fas fa-video"></i></button>
+                                <span class="fw-bold" style="margin-left: 10px;">Over 5.8k</br>Video Course</span>
+                            </div>
+                            <p class="text-secondary mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur, cupiditate officiis molestias delectus illo pariatur exercitationem reiciendis unde quas. Dolorum libero sequi at commodi eligendi quo, cumque tenetur quae?</p>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <button class="btn btn-warning text-white btn-lg"><i class="fas fa-video"></i></button>
+                                <span class="fw-bold" style="margin-left: 10px;">Over 5.8k</br>Video Course</span>
+                            </div>
+                            <p class="text-secondary mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur, cupiditate officiis molestias delectus illo pariatur exercitationem reiciendis unde quas. Dolorum libero sequi at commodi eligendi quo, cumque tenetur quae?</p>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <button class="btn btn-warning text-white btn-lg"><i class="fas fa-video"></i></button>
+                                <span class="fw-bold" style="margin-left: 10px;">Over 5.8k</br>Video Course</span>
+                            </div>
+                            <p class="text-secondary mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo consectetur, cupiditate officiis molestias delectus illo pariatur exercitationem reiciendis unde quas. Dolorum libero sequi at commodi eligendi quo, cumque tenetur quae?</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial mt-5" id="testimonial">
+            <div class="text-center">
+                <h2 class="display-3 fw-bold">Some Best Books</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore, natus alias? Officiis odit nemo expedita possimus
+                    </p>
+            </div>
+            <div id="slider">
+                    <div class="container justify-content-center mt-5">
+                        <div class="row owl-carousel owl-theme ">
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-4 item">
+                                <img src="/images/book.png" class=" img-fluid" alt="">
+                            </div>
+                               
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="contact mt-5" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <h2 class="display-3 fw-bold">Get More With Your Course</h2>
+                        <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quam quis expedita fugiat earum corporis consequuntur, repudiandae commodi accusantium maxime deleniti consectetur <br>quod molestiae incidunt eveniet, provident facilis placeat illo?</p>
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui beatae, ipsam quo nemo facere possimus et distinctio laboriosam,</p>
+                        <div>
+                            <p><span style="margin-right: 10px;" class="text-primary "><i class="fas fa-circle-check"></i></span>Detail ...</p>
+                            <p><span style="margin-right: 10px;" class="text-primary "><i class="fas fa-circle-check"></i></span>Detail ...</p>
+                            <p><span style="margin-right: 10px;" class="text-primary "><i class="fas fa-circle-check"></i></span>Detail ...</p>
+                        </div>
+                        <button class="btn btn-primary btn-lg">Start learning Now</button>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <img src="/images/service.png" alt="" class=" h-100 img-fluid">
+                        <div class="sub-video">
+                            <img src="/images/service_vid.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row register-sup mt-5">
+                    <div class="col-6 content">
+                        <h2 class="fw-bold display-3 text-white">Ready to join...</h2>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit perspiciatis ipsa facere tenetur nam consequuntur quidem, aliquam esse distinctio mollitia iure, vero provident asperiores tempora autem. Beatae enim sint laudantium?</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center align-items-center">
+                        <button class="btn btn-light btn-lg">Register now</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <footer class="footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 col-lg-4">
+                        <img src="/images/logo.png" alt="">
+                        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, cumque perspiciatis dolore provident tenetur accusantium! Neque quisquam est architecto dolor ipsum ad beatae ipsa, ut a non numquam aut dolorem?</p>
+                        <div class="d-flex justify-content-around">
+                            <span><i class="fa-brands fa-facebook"></i></span>
+                            <span><i class="fa-brands fa-linkedin-in"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                            <span><i class="fa-brands fa-pinterest-p"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-2 mt-4">
+                        <div class="footer__category">
+                            <p class="h4">Category</p>
+                            <ul>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-2 mt-4">
+                        <div class="footer__category">
+                            <p class="h4">Category</p>
+                            <ul>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+                                <li>Privacy</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 mt-4">
+                        <p class="h4">Contact Us</p>
+                        <div class="d-flex flex-column">
+                            <p><i class="fas fa-phone"></i> 123456782</p>
+                            <p><i class="fas fa-location-pin"></i> Viet Nam</p>
+                            <p><i class="fas fa-envelope"></i> abc@gmail.com</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row footer-border"></div>
+                <p class="text-center">&copy; Copyright 2021 by ....Email: abc@gmail.com</p>
+            </div>
+        </footer>
+        <!-- js file  -->
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+        <script src="/dist/owl.carousel.js"></script>
+        
+        <script src="/js/script.js"></script>
+    </body>
+</html>
